@@ -1,4 +1,4 @@
-# Nike US Sales — What Drives Revenue?
+# Personal project: Nike US Sales — What Drives Revenue?
 
 A look at Nike's US sales data to figure out what actually drives revenue,
 and turn that into a few practical recommendations for the business.
