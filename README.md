@@ -1,15 +1,14 @@
 # Personal project: Nike US Sales — What Drives Revenue?
 
-A look at Nike's US sales data to figure out what actually drives revenue,
-and turn that into a few practical recommendations for the business.
+An exploratory analysis of Nike US sales data to understand what drives revenue and identify a few practical business recommendations.
 
 ## The dataset
 
 - 9,360 transactions from January 2020 to December 2021
 - Columns: `Invoice Date`, `Product`, `Region`, `Retailer`, `Sales Method`,
   `State`, `Price per Unit`, `Total Sales`, `Units Sold`
-- No missing values, which made this pretty easy to work with
-
+- There were no missing values, so data cleaning was minimal.
+  
 ## What's in the notebook
 
 1. Load the data and take a first look
@@ -25,10 +24,7 @@ and turn that into a few practical recommendations for the business.
 
 ## What I found
 
-Revenue is mostly just math: `Units Sold` (86%) and `Price per Unit` (11%)
-explain almost all of it, since revenue is volume times price. Everything
-else — product, region, state, channel — barely moves the needle once you
-already know those two numbers.
+One thing that stood out is that revenue is mostly just math: Units Sold accounted for most of the model's importance (86%), followed by Price per Unit (11%). Everything else — product, region, state, channel — barely moves the needle once you already know those two numbers.
 
 The more interesting question is what drives **units sold**, since that's
 something the business can actually influence. There, `State` (28%),
@@ -56,9 +52,7 @@ order value, Online the lowest.
 4. Keep investing in the top product lines, and dig into why Women's
    Athletic Footwear is underperforming.
 5. Take a closer look at the Online channel and its lower order values.
-6. Use a simple price × volume model for short-term forecasts, but lean on
-   the demand model (state, channel, product mix) when deciding where to
-   invest.
+6. For short-term forecasting, a simple price × volume model works well. For planning where to invest, use the demand model instead.
 
 ## Built with
 
